@@ -42,7 +42,62 @@ class CategoriesTableSeeder extends Seeder
                 'description'=>'Game đang hot trong giới trẻ',
                 'thumbnail'=>'http://news.cdn.leagueoflegends.com/public/images/misc/Background.jpg'
             ],
-
+            [
+                'id'=>5,
+                'parentId'=>1,
+                'name'=>'Liên minh huyền thoại Bạc đoàn',
+                'description'=>'Game đang hot trong giới trẻ',
+                'thumbnail'=>'http://news.cdn.leagueoflegends.com/public/images/misc/Background.jpg'
+            ],
+            [
+                'id'=>6,
+                'parentId'=>1,
+                'name'=>'Liên minh huyền thoại Bạch kim đoàn',
+                'description'=>'Game đang hot trong giới trẻ',
+                'thumbnail'=>'http://news.cdn.leagueoflegends.com/public/images/misc/Background.jpg'
+            ],
+            [
+                'id'=>7,
+                'parentId'=>2,
+                'name'=>'PUBG Đồng đoàn',
+                'description'=>'Game đang hấp hối',
+                'thumbnail'=>'https://steamuserimages-a.akamaihd.net/ugc/931554217225615451/A0282B56D929E82A7F511E134C67815E8C7F6C56/?interpolation=lanczos-none&output-format=jpeg&output-quality=95&fit=inside%7C637%3A358&composite-to=*,*%7C637%3A358&background-color=black'
+            ],
+            [
+                'id'=>8,
+                'parentId'=>2,
+                'name'=>'PUBG Bạc đoàn',
+                'description'=>'Game đang hấp hối',
+                'thumbnail'=>'https://steamuserimages-a.akamaihd.net/ugc/931554217225615451/A0282B56D929E82A7F511E134C67815E8C7F6C56/?interpolation=lanczos-none&output-format=jpeg&output-quality=95&fit=inside%7C637%3A358&composite-to=*,*%7C637%3A358&background-color=black'
+            ],
+            [
+                'id'=>9,
+                'parentId'=>2,
+                'name'=>'PUBG Vàng đoàn',
+                'description'=>'Game đang hấp hối',
+                'thumbnail'=>'https://steamuserimages-a.akamaihd.net/ugc/931554217225615451/A0282B56D929E82A7F511E134C67815E8C7F6C56/?interpolation=lanczos-none&output-format=jpeg&output-quality=95&fit=inside%7C637%3A358&composite-to=*,*%7C637%3A358&background-color=black'
+            ],
+            [
+                'id'=>10,
+                'parentId'=>3,
+                'name'=>'CSGO Đồng đoàn',
+                'description'=>'Daed game',
+                'thumbnail'=>'https://vignette.wikia.nocookie.net/counterstrike/images/2/2f/Steam_Store_Global_Offensive_header_2015.jpg/revision/latest?cb=20150511180147&path-prefix=tr'
+            ],
+            [
+                'id'=>11,
+                'parentId'=>3,
+                'name'=>'CSGO Bạc đoàn',
+                'description'=>'Daed game',
+                'thumbnail'=>'https://vignette.wikia.nocookie.net/counterstrike/images/2/2f/Steam_Store_Global_Offensive_header_2015.jpg/revision/latest?cb=20150511180147&path-prefix=tr'
+            ],
+            [
+                'id'=>12,
+                'parentId'=>3,
+                'name'=>'CSGO Vàng đoàn',
+                'description'=>'Daed game',
+                'thumbnail'=>'https://vignette.wikia.nocookie.net/counterstrike/images/2/2f/Steam_Store_Global_Offensive_header_2015.jpg/revision/latest?cb=20150511180147&path-prefix=tr'
+            ],
         ]);
     }
 }
