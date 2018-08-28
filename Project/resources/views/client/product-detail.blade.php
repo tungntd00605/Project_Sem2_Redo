@@ -10,7 +10,8 @@
     <title>E-Commerce - MDBootstrap</title>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     <!-- Bootstrap core CSS -->
     <link href="{{asset('mdb/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -45,7 +46,7 @@
                     </li>
                     <li class="nav-item ml-3">
                         <a class="nav-link waves-effect waves-light dark-grey-text font-weight-bold" href="#">
-                            <i class="fa fa-gear blue-text"></i> Settings</a>
+                            <i class="far fa-envelope blue-text"></i> Contact</a>
                     </li>
                     <li class="nav-item dropdown ml-3">
                         <a class="nav-link dropdown-toggle waves-effect waves-light dark-grey-text font-weight-bold" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
