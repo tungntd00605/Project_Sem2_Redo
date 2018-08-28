@@ -105,6 +105,13 @@ class CategoriesTableSeeder extends Seeder
                 'description'=>'Còn chờ gì nữa mà không go pro hả giáo sư',
                 'thumbnail'=>'https://csgoallrankstore.com/wp-content/uploads/2017/09/ge-2-247x247.png  '
             ],
+            [
+                'id'=>14,
+                'parentId'=>null,
+                'name'=>'Minecraft',
+                'description'=>'Game dành cho con nít',
+                'thumbnail'=>'http://www.qygjxz.com/data/out/158/5223386-minecraft-wallpaper.jpg'
+            ],
         ]);
     }
 }
