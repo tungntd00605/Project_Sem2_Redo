@@ -39,64 +39,71 @@ class CategoriesTableSeeder extends Seeder
                 'id'=>4,
                 'parentId'=>1,
                 'name'=>'Liên minh huyền thoại Đồng đoàn',
-                'description'=>'Game đang hot trong giới trẻ',
+                'description'=>'Trình độ gà con bị bắt nạt',
                 'thumbnail'=>'http://news.cdn.leagueoflegends.com/public/images/misc/Background.jpg'
             ],
             [
                 'id'=>5,
                 'parentId'=>1,
                 'name'=>'Liên minh huyền thoại Bạc đoàn',
-                'description'=>'Game đang hot trong giới trẻ',
+                'description'=>'Trình độ lính mới tò te',
                 'thumbnail'=>'http://news.cdn.leagueoflegends.com/public/images/misc/Background.jpg'
             ],
             [
                 'id'=>6,
                 'parentId'=>1,
                 'name'=>'Liên minh huyền thoại Bạch kim đoàn',
-                'description'=>'Game đang hot trong giới trẻ',
+                'description'=>'Trình độ chơi game thời gian dài',
                 'thumbnail'=>'http://news.cdn.leagueoflegends.com/public/images/misc/Background.jpg'
             ],
             [
                 'id'=>7,
                 'parentId'=>2,
-                'name'=>'PUBG Đồng đoàn',
-                'description'=>'Game đang hấp hối',
+                'name'=>'PUBG Account',
+                'description'=>'Tài khoản steam đã kích hoạt game PUBG',
                 'thumbnail'=>'https://steamuserimages-a.akamaihd.net/ugc/931554217225615451/A0282B56D929E82A7F511E134C67815E8C7F6C56/?interpolation=lanczos-none&output-format=jpeg&output-quality=95&fit=inside%7C637%3A358&composite-to=*,*%7C637%3A358&background-color=black'
             ],
             [
                 'id'=>8,
-                'parentId'=>2,
-                'name'=>'PUBG Bạc đoàn',
-                'description'=>'Game đang hấp hối',
-                'thumbnail'=>'https://steamuserimages-a.akamaihd.net/ugc/931554217225615451/A0282B56D929E82A7F511E134C67815E8C7F6C56/?interpolation=lanczos-none&output-format=jpeg&output-quality=95&fit=inside%7C637%3A358&composite-to=*,*%7C637%3A358&background-color=black'
+                'parentId'=>3,
+                'name'=>'CSGO Silver',
+                'description'=>'Rank mới tập cầm súng',
+                'thumbnail'=>'https://csgoallrankstore.com/wp-content/uploads/2017/09/s1-2.png'
             ],
             [
                 'id'=>9,
-                'parentId'=>2,
-                'name'=>'PUBG Vàng đoàn',
-                'description'=>'Game đang hấp hối',
-                'thumbnail'=>'https://steamuserimages-a.akamaihd.net/ugc/931554217225615451/A0282B56D929E82A7F511E134C67815E8C7F6C56/?interpolation=lanczos-none&output-format=jpeg&output-quality=95&fit=inside%7C637%3A358&composite-to=*,*%7C637%3A358&background-color=black'
+                'parentId'=>3,
+                'name'=>'CSGO Nova',
+                'description'=>'Rank biết bắn súng phun nước',
+                'thumbnail'=>'https://csgoallrankstore.com/wp-content/uploads/2017/09/gn4-2-247x247.png'
             ],
             [
                 'id'=>10,
                 'parentId'=>3,
-                'name'=>'CSGO Đồng đoàn',
-                'description'=>'Daed game',
-                'thumbnail'=>'https://vignette.wikia.nocookie.net/counterstrike/images/2/2f/Steam_Store_Global_Offensive_header_2015.jpg/revision/latest?cb=20150511180147&path-prefix=tr'
+                'name'=>'CSGO Master Guardian',
+                'description'=>'Rank bắt nạt được bot',
+                'thumbnail'=>'https://csgoallrankstore.com/wp-content/uploads/2017/09/gn4-2-247x247.png'
             ],
             [
                 'id'=>11,
                 'parentId'=>3,
-                'name'=>'CSGO Bạc đoàn',
-                'description'=>'Daed game',
-                'thumbnail'=>'https://vignette.wikia.nocookie.net/counterstrike/images/2/2f/Steam_Store_Global_Offensive_header_2015.jpg/revision/latest?cb=20150511180147&path-prefix=tr'
+                'name'=>'CSGO Legendary Eagle',
+                'description'=>'Rank cao thủ đi săn chim',
+                'thumbnail'=>'https://csgoallrankstore.com/wp-content/uploads/2017/09/lem-2-247x247.png'
             ],
             [
                 'id'=>12,
                 'parentId'=>3,
-                'name'=>'CSGO Vàng đoàn',
-                'description'=>'Daed game',
-                'thumbnail'=>'https://vignette.wikia.nocookie.net/counterstrike/images/2/2f/Steam_Store_Global_Offensive_header_2015.jpg/revision/latest?cb=20150511180147&path-prefix=tr'
+                'name'=>'CSGO Supreme Master',
+                'description'=>'Gosu top đầu của game',
+                'thumbnail'=>'https://csgoallrankstore.com/wp-content/uploads/2017/09/smfc-2-247x247.png'
+            ],
+            [
+                'id'=>13,
+                'parentId'=>3,
+                'name'=>'CSGO Global Elite',
+                'description'=>'Còn chờ gì nữa mà không go pro hả giáo sư',
+                'thumbnail'=>'https://csgoallrankstore.com/wp-content/uploads/2017/09/ge-2-247x247.png  '
             ],
         ]);
     }
