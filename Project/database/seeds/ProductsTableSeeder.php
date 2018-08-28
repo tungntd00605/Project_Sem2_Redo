@@ -17,7 +17,7 @@ class ProductsTableSeeder extends Seeder
             [
                 'name'=> '#1',
                 'categoryId'=>4,
-                'thumbnail'=>'http://news.cdn.leagueoflegends.com/public/images/misc/Background.jpg',
+                'thumbnails'=>'http://news.cdn.leagueoflegends.com/public/images/misc/Background.jpg',
                 'price'=>20000,
                 'description'=>'Nick đồng đoàn',
                 'detail'=>'Full tướng ko skin',
