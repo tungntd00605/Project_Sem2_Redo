@@ -40,6 +40,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
                 <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link dark-grey-text font-weight-bold" href="#" data-toggle="modal" data-target="#cart-modal-ex">
+                            <span class="badge danger-color">4</span>
+                            <i class="fa fa-shopping-cart blue-text" aria-hidden="true"></i>
+                            <span class="clearfix d-none d-sm-inline-block">Cart</span>
+                        </a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link waves-effect waves-light dark-grey-text font-weight-bold" href="#"><i class="fa fa-envelope blue-text"></i> Contact <span class="sr-only">(current)</span></a>
                     </li>
@@ -77,37 +84,45 @@
             <!-- Links -->
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
-                        <span class="sr-only">(current)</span>
+                    <a class="nav-link font-weight-bold white-text" href="#">
+                        Categories
                     </a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Liên Minh Huyền Thoại</a>
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#"><img src="{{asset('mdb/img/rank-lmht/1-1.png')}}" alt="" height="30px"> &nbsp;Rank Đồng</a>
-                        <a class="dropdown-item" href="#"><img src="{{asset('mdb/img/rank-lmht/2-1.png')}}" alt="" height="30px"> &nbsp;Rank Bạc</a>
-                        <a class="dropdown-item" href="#"><img src="{{asset('mdb/img/rank-lmht/3-1.png')}}" alt="" height="30px"> &nbsp;Rank Vàng</a>
-                        <a class="dropdown-item" href="#"><img src="{{asset('mdb/img/rank-lmht/4-1.png')}}" alt="" height="30px"> &nbsp;Bạch Kim</a>
-                        <a class="dropdown-item" href="#"><img src="{{asset('mdb/img/rank-lmht/5-1.png')}}" alt="" height="30px"> &nbsp;Kim Cương</a>
-                        <a class="dropdown-item" href="#"><img src="{{asset('mdb/img/rank-lmht/6-1.png')}}" alt="" height="30px"> &nbsp;Cao Thủ</a>
-                        <a class="dropdown-item" href="#"><img src="{{asset('mdb/img/rank-lmht/7-1.png')}}" alt="" height="30px"> &nbsp;Thách Đấu</a>
+                        <a class="dropdown-item" href="#"><img src="{{asset('img/rank-lmht/1-1.png')}}" alt="" height="30px"> &nbsp;Rank Đồng</a>
+                        <a class="dropdown-item" href="#"><img src="{{asset('img/rank-lmht/2-1.png')}}" alt="" height="30px"> &nbsp;Rank Bạc</a>
+                        <a class="dropdown-item" href="#"><img src="{{asset('img/rank-lmht/3-1.png')}}" alt="" height="30px"> &nbsp;Rank Vàng</a>
+                        <a class="dropdown-item" href="#"><img src="{{asset('img/rank-lmht/4-1.png')}}" alt="" height="30px"> &nbsp;Bạch Kim</a>
+                        <a class="dropdown-item" href="#"><img src="{{asset('img/rank-lmht/5-1.png')}}" alt="" height="30px"> &nbsp;Kim Cương</a>
+                        <a class="dropdown-item" href="#"><img src="{{asset('img/rank-lmht/6-1.png')}}" alt="" height="30px"> &nbsp;Cao Thủ</a>
+                        <a class="dropdown-item" href="#"><img src="{{asset('img/rank-lmht/7-1.png')}}" alt="" height="30px"> &nbsp;Thách Đấu</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PUBG</a>
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#"></a>
-                        <a class="dropdown-item" href="#"></a>
-                        <a class="dropdown-item" href="#"></a>
+                        <a class="dropdown-item" href="#"><img src="{{asset('img/rank-lmht/1-1.png')}}" alt="" height="30px"> &nbsp;Rank Đồng</a>
+                        <a class="dropdown-item" href="#"><img src="{{asset('img/rank-lmht/2-1.png')}}" alt="" height="30px"> &nbsp;Rank Bạc</a>
+                        <a class="dropdown-item" href="#"><img src="{{asset('img/rank-lmht/3-1.png')}}" alt="" height="30px"> &nbsp;Rank Vàng</a>
+                        <a class="dropdown-item" href="#"><img src="{{asset('img/rank-lmht/4-1.png')}}" alt="" height="30px"> &nbsp;Bạch Kim</a>
+                        <a class="dropdown-item" href="#"><img src="{{asset('img/rank-lmht/5-1.png')}}" alt="" height="30px"> &nbsp;Kim Cương</a>
+                        <a class="dropdown-item" href="#"><img src="{{asset('img/rank-lmht/6-1.png')}}" alt="" height="30px"> &nbsp;Cao Thủ</a>
+                        <a class="dropdown-item" href="#"><img src="{{asset('img/rank-lmht/7-1.png')}}" alt="" height="30px"> &nbsp;Thách Đấu</a>
                     </div>
                 </li>
                 <!-- Dropdown -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CSGO</a>
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#"><img src="{{asset('img/rank-lmht/1-1.png')}}" alt="" height="30px"> &nbsp;Rank Đồng</a>
+                        <a class="dropdown-item" href="#"><img src="{{asset('img/rank-lmht/2-1.png')}}" alt="" height="30px"> &nbsp;Rank Bạc</a>
+                        <a class="dropdown-item" href="#"><img src="{{asset('img/rank-lmht/3-1.png')}}" alt="" height="30px"> &nbsp;Rank Vàng</a>
+                        <a class="dropdown-item" href="#"><img src="{{asset('img/rank-lmht/4-1.png')}}" alt="" height="30px"> &nbsp;Bạch Kim</a>
+                        <a class="dropdown-item" href="#"><img src="{{asset('img/rank-lmht/5-1.png')}}" alt="" height="30px"> &nbsp;Kim Cương</a>
+                        <a class="dropdown-item" href="#"><img src="{{asset('img/rank-lmht/6-1.png')}}" alt="" height="30px"> &nbsp;Cao Thủ</a>
+                        <a class="dropdown-item" href="#"><img src="{{asset('img/rank-lmht/7-1.png')}}" alt="" height="30px"> &nbsp;Thách Đấu</a>
                     </div>
                 </li>
 
