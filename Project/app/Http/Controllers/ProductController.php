@@ -63,7 +63,7 @@ class ProductController extends Controller
         if ($obj == null){
             return '404';
         }
-        return view('admin.product.show')->with('obj',$obj);
+        //return view('admin.product.show')->with('obj',$obj);
     }
 
     /**
@@ -115,6 +115,16 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $obj = Product::find($id);
+        if($obj == null){
+            return '404';
+        }
+        $obj->delete();
+        return redirect('admin/product')->with('success', 'Account has been deleted!!');
+    }
+
+    public function destroyMany(){
+        Product::destroy(Input::get('ids'));
+        return redirect('admin/product');
     }
 }

@@ -6,6 +6,13 @@
         <div class="card-body">
             <div id="table" class="table-editable">
                 <span class="table-add float-right mb-3 mr-2"><a href="./product/create" class="text-success"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></a></span>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="checkAll">
+                    <label class="custom-control-label" for="checkAll">Check All</label>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-danger btn-rounded btn-sm my-0" id="btn-apply">Remove Selected</button>
+                </div>
                 <table class="table table-bordered table-responsive-md table-striped text-center">
                     <tr>
                         <th class="text-center"></th>
@@ -20,7 +27,10 @@
                     @foreach ($list_obj as $item)
                     <tr>
                         <td class="pt-3-half"> 
-                        </td>
+                            <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="check-{{$item->id}}">
+                                <label class="custom-control-label" for="check-{{$item->id}}"></label>
+                            </div>
                         <td class="pt-3-half">{{$item->name}}</td>
                         <td class="pt-3-half">{{$item->category->name}}</td>
                         <td class="pt-3-half">{{$item->price}}</td>
@@ -29,7 +39,11 @@
                         <td class="pt-3-half">{{$item->description}}</td>
                         <td>
                             <a href="/admin/product/{{$item->id}}/edit">Edit</a>
-                            <a href="/admin/product/{{$item->id}}/edit">Detele</a>
+                            <form action="/admin/product/{{$item->id}}" method="POST">
+                                @method('DELETE')
+                                {{ csrf_field() }}
+                                <button type="submit" class="btn btn-danger btn-rounded btn-sm my-0">Remove</button>
+                            </form>
                         </td>
                     </tr>
                     @endforeach
@@ -38,5 +52,7 @@
             </div>
         </div>
     </div>
-    <!-- Editable table -->
+
+    <script src="{{asset('js/product.js')}}"></script>
+
 @endsection

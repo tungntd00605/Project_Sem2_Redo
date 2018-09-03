@@ -2,7 +2,6 @@
 @section('content')
 <section class="section card mb-5">
 
-<h1>{{$game->id}}</h1>
         <div class="card-body">
 
             <!--Section heading-->
