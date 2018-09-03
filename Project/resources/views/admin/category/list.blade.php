@@ -13,8 +13,6 @@
                         <th class="text-center">Game</th>
                         <th class="text-center">Description</th>
                         <th class="text-center">Thumbnail</th>
-                        <th class="text-center">Created At</th>
-                        <th class="text-center">Updated At</th>
                         <th class="text-center">Option</th>
                     </tr>
                     @foreach ($list_obj as $item)
@@ -26,8 +24,6 @@
                             <td class="pt-3-half">
                                 <img src="{{$item->thumbnail}}" alt="" width="200px">
                             </td>
-                            <td class="pt-3-half">{{$item->created_at}}</td>
-                            <td class="pt-3-half">{{$item->updated_at}}</td>
                             <td>
                                 <span class="table-remove"><button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
                             </td>

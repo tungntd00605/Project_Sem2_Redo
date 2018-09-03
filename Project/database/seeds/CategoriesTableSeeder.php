@@ -82,7 +82,7 @@ class CategoriesTableSeeder extends Seeder
                 'parentId'=>3,
                 'name'=>'CSGO Master Guardian',
                 'description'=>'Rank bắt nạt được bot',
-                'thumbnail'=>'https://csgoallrankstore.com/wp-content/uploads/2017/09/gn4-2-247x247.png'
+                'thumbnail'=>'https://csgoallrankstore.com/wp-content/uploads/2017/09/mg3-2-247x247.png'
             ],
             [
                 'id'=>11,
@@ -110,7 +110,7 @@ class CategoriesTableSeeder extends Seeder
                 'parentId'=>null,
                 'name'=>'Minecraft',
                 'description'=>'Game dành cho con nít',
-                'thumbnail'=>'http://www.qygjxz.com/data/out/158/5223386-minecraft-wallpaper.jpg'
+                'thumbnail'=>'https://st.gamevui.com/images/image/2018/07/07/Minecraft-640.jpg'
             ],
         ]);
     }

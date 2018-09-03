@@ -15,8 +15,6 @@
                         <th class="text-center">Thumbnails</th>
                         <th class="text-center">Discount</th>
                         <th class="text-center">Description</th>
-                        <th class="text-center">Created At</th>
-                        <th class="text-center">Updated At</th>
                         <th class="text-center">Option</th>
                     </tr>
                     @foreach ($list_obj as $item)
@@ -25,16 +23,10 @@
                         </td>
                         <td class="pt-3-half">{{$item->name}}</td>
                         <td class="pt-3-half">{{$item->category->name}}</td>
-                        <td class="pt-3-half"><img src="{{$item->thumbnails}}" alt="" width="200px"></td>
                         <td class="pt-3-half">{{$item->price}}</td>
+                        <td class="pt-3-half"><img src="{{$item->thumbnail}}" alt="" width="200px"></td>
                         <td class="pt-3-half">{{$item->discount}}</td>
                         <td class="pt-3-half">{{$item->description}}</td>
-                        <td class="pt-3-half">
-                                {{$item->created_at}}
-                        </td>
-                        <td class="pt-3-half">
-                                {{$item->updated_at}}
-                        </td>
                         <td>
                             <a href="/admin/product/{{$item->id}}/edit">Edit</a>
                             <a href="/admin/product/{{$item->id}}/edit">Detele</a>
