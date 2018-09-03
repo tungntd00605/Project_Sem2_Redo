@@ -19,7 +19,7 @@ class CreateCategoriesTable extends Migration
             $table->unsignedInteger('parentId')->nullable();
             $table->foreign('parentId')->references('id')->on('categories');
             $table->string('description', 250);
-            $table->text('thumbnail', 250);
+            $table->text('thumbnail');
             $table->timestamps();
             $table->integer('status')->default(1);
         });
