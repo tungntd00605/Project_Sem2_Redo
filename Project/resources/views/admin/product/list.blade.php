@@ -13,6 +13,8 @@
                 <div class="row">
                     <button type="button" class="btn btn-danger btn-rounded btn-sm my-0" id="btn-apply">Remove Selected</button>
                 </div>
+                <div class="alert alert-success d-none" role="alert" id="messageSuccess"></div>
+                <div class="alert alert-danger d-none" role="alert" id="messageError"></div>
                 <table class="table table-bordered table-responsive-md table-striped text-center">
                     <tr>
                         <th class="text-center"></th>
@@ -25,10 +27,10 @@
                         <th class="text-center">Option</th>
                     </tr>
                     @foreach ($list_obj as $item)
-                    <tr>
+                    <tr id="row-{{$item->id}}">
                         <td class="pt-3-half"> 
                             <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="check-{{$item->id}}">
+                                <input type="checkbox" class="custom-control-input check-item" id="check-{{$item->id}}">
                                 <label class="custom-control-label" for="check-{{$item->id}}"></label>
                             </div>
                         <td class="pt-3-half">{{$item->name}}</td>

@@ -125,6 +125,6 @@ class ProductController extends Controller
 
     public function destroyMany(){
         Product::destroy(Input::get('ids'));
-        return redirect('admin/product');
+        return "Ok";
     }
 }

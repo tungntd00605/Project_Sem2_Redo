@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 Route::resource('admin/category', 'CategoryController');
 Route::resource('admin/product', 'ProductController');
+Route::delete('admin/product/delete-many', 'ProductController@destroyMany');
 
 
 //Test route cho view bên client
