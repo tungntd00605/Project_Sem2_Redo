@@ -47,3 +47,8 @@ function processDelete(){
         });
     }
 }
+
+$('form[name="category-form"] select[name="categoryId"]').change(()=>{
+    window.location.href = $('form[name="category-form"]').attr('action') + '?categoryId=' + $(this).val();
+    //alert($(this).val());
+});

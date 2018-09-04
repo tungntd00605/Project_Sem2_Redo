@@ -17,8 +17,18 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $list_obj = Product::all();
-        return view('admin.product.list')->with("list_obj", $list_obj);
+        $list_obj = 0;
+        $big_category = Category::all()->where('parentId', null);
+        $choosedCategory = Input::get('categoryId');
+        if($choosedCategory == 0 || $choosedCategory == null){
+            $list_obj = Product::all();
+        }
+        else {
+            $list_obj = Product::where('categoryId', $choosedCategory);
+        }
+        return view('admin.product.list')
+            ->with("list_obj", $list_obj)
+            ->with('big_category', $big_category);  
     }
 
     /**

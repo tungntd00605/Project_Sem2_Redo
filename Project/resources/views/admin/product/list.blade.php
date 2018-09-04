@@ -6,13 +6,30 @@
         <div class="card-body">
             <div id="table" class="table-editable">
                 <span class="table-add float-right mb-3 mr-2"><a href="./product/create" class="text-success"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></a></span>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="checkAll">
-                    <label class="custom-control-label" for="checkAll">Check All</label>
-                </div>
                 <div class="row">
-                    <button type="button" class="btn btn-danger btn-rounded btn-sm my-0" id="btn-apply">Remove Selected</button>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="checkAll">
+                        <label class="custom-control-label" for="checkAll">Check All</label>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-danger btn-rounded btn-sm my-0" id="btn-apply">Remove Selected</button>
+                    </div>
+                    <div class="col">
+                        <form action="/admin/product" method="GET" name="category-form">
+                            <select class="mdb-select colorful-select dropdown-primary" name="categoryId">
+                                <option value="" choosed>Choose game</option>
+                                @foreach ($big_category as $item)
+                                    <option value="{{$item->id}}">{{$item->name}}</option>
+                                @endforeach
+                            </select>
+                        </form>
+                        
+                    </div>
+                    
                 </div>
+                
+                
+
                 <div class="alert alert-success d-none" role="alert" id="messageSuccess"></div>
                 <div class="alert alert-danger d-none" role="alert" id="messageError"></div>
                 <table class="table table-bordered table-responsive-md table-striped text-center">
@@ -54,6 +71,7 @@
             </div>
         </div>
     </div>
+
 
     <script src="{{asset('js/product.js')}}"></script>
 
